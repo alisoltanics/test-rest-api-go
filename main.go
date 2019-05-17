@@ -12,8 +12,8 @@ import (
 
 type Book struct {
   gorm.Model
-  Isbn   string  json:"isbn"
-  Title  string  json:"title"
+  Isbn   string  `json:"isbn"`
+  Title  string  `json:"title"`
 }
 
 
