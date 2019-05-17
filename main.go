@@ -68,7 +68,7 @@ func createBook(w http.ResponseWriter, r *http.Request) {
   	}
   	defer db.Close()
 
-    var book Book
+	var book Book
   	_ = json.NewDecoder(r.Body).Decode(&book)
   	db.Create(&book)
   	json.NewEncoder(w).Encode(book)
