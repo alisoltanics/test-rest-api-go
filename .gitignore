@@ -19,6 +19,9 @@
 # db file
 *.db
 
+#custom files
+test-rest-api
+
 ### Go Patch ###
 /vendor/
 /Godeps/
